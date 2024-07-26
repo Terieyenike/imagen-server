@@ -26,7 +26,6 @@ router.post("/", async (req, res) => {
     });
 
     const image_url = aiResponse.data[0].url;
-    console.log(image_url);
     res.status(200).json({ photo: image_url });
   } catch (error) {
     console.error(error);
